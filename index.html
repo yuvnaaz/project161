@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src = "bowl.js"></script>
+</head>
+<body>
+<a-scene id = "scene">
+    <a-entity
+    id = "camera" camera position = "0 1 6" wasd-controls look-controls="pointerLockEngabled: false"></a-entity>
+    <a-entity
+    id = "light" light="type: ambient; color: yellow; intensity:0.5"></a-entity>
+    <a-entity
+    id = bowl radius = 2 color = "white" position = "0 -4 3"></a-entity>
+    <a-entity
+    id = "ground" repeat = "5 5" position = "0 1 0" height = "200" width = "200" static-body visible = "true"></a-entity>
+    <a-entity
+    id = "pins" position = "0 0 -5" height = "30" width = "20" dynamic-body visible = "true"></a-entity>
+</a-scene>
+
+
+
+</body>
+</html>
